@@ -8,6 +8,7 @@ def main():
     3. Install git
     4. All important single modules
     5.Clear
+    6.Update
     Enter your choice: """)
     if choice == "1":
        pip()
@@ -18,7 +19,9 @@ def main():
     elif choice == "4":
        single()
     elif choice == "5":
-       clear() 
+       clear()
+    elif choice == "6":
+       update()
 def pip():
     try:
        os.system("sudo apt install python3-pip")
@@ -195,4 +198,12 @@ def clear():
 def clear1():
     os.system("clear")
     single()
-main()
+
+    
+def update():
+    try:
+       os.system("git clone https://github.com/WHYSOEASY/EasyScript.git")
+       main()
+    except:
+       print("Updated already or failed to update")
+       main()
