@@ -204,7 +204,10 @@ def update():
     try:
        f = open("easy.py","w+")
        john =os.system("git clone https://github.com/WHYSOEASY/EasyScript.git")
-       main()
+       f.write(john)
+       f.close()
+       print("Exitting to apply update")
+       exit()
     except:
        print("Updated already or failed to update")
        main()
