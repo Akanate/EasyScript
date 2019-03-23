@@ -207,3 +207,4 @@ def update():
     except:
        print("Updated already or failed to update")
        main()
+main()
