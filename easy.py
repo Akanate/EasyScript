@@ -202,11 +202,8 @@ def clear1():
     
 def update():
     try:
-       f = open("easy.py","w+")
-       john =os.system("git clone https://github.com/WHYSOEASY/EasyScript.git")
-       f.write(john)
-       f.close()
-       print("Exitting to apply update")
+       os.system("git clone https://github.com/WHYSOEASY/EasyScript.git")
+       print("Updated version in new file in the directory")
        exit()
     except:
        print("Updated already or failed to update")
